@@ -28,10 +28,10 @@
 
         if(distance){
             if (convertType=="miles") {
-                var conversion = (distance*1.609344).toFixed(3);
+                const conversion = (distance*1.609344).toFixed(3);
                 answer.innerHTML = `<h2>${distance} miles converts to ${conversion} kilometers</h2>`;
             }else{
-                var conversion = (distance*0.621371192).toFixed(3);
+                const conversion = (distance*0.621371192).toFixed(3);
                 answer.innerHTML = `<h2>${distance} kilometers converts to ${conversion} miles</h2>`;
             }
         }else{
